@@ -1,9 +1,7 @@
 class NumberInput:
     def get_numbers(self, current_player):
         while True:
-            value = input(
-                f"{current_player}님, 말할 숫자를 1~3개 입력하세요: "
-            ).strip()
+            value = input(f"{current_player}님, 말할 숫자를 1~3개 입력하세요: ").strip()
             number_text = value.split()
 
             if not 1 <= len(number_text) <= 3:
